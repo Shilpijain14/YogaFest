@@ -1,11 +1,258 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <!-- for a responsive website -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test Web Project</title>
+
+    <!-- Meta tags SEO -->
+    <meta name="description" content="Description of your webpage">
+    <meta name="keywords" content="Keywords of your webpage">
+    <meta name="author" content="Your name">
+
+    <!-- social media Meta tags -->
+    <meta property="og:title" content="Your Webpage Title" />
+    <meta property="og:description" content="Description of your webpage" />
+    <meta property="og:image" content="URL to your webpage's image" />
+    <meta property="og:url" content="URL of your webpage" />
+    <meta name="twitter:title" content="Your Webpage Title" />
+    <meta name="twitter:description" content="Description of your webpage" />
+    <meta name="twitter:image" content="URL to your webpage's image" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+
+
+    <title>Homepage</title>
+
+
+    <link rel="stylesheet" href="styles/home-page.css">
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+
 </head>
+
 <body>
-    
+    <header>
+        <div class="navbar">
+            <img class="logo" src="./images/logo.svg" alt="logo image"/>
+            <ul id="menuList">
+                <li><a href="#aboutus">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#findyourprogram">Find Your Program</a></li>
+                                
+            </ul>
+            <div class="menu-icon">
+                <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- _____START OF CAROUSEL_____ -->
+
+    <Section class="carousel-container">
+        <div class="carousel-slide">
+            <img src="./images/Hero-image-carousel.webp" alt="Image 1" class="active"/>
+            <img src="./images/Camp-carousel.webp" alt="Image 2" />
+            <img src="./images/Buddha-temple-carousel.webp" alt="Image 3" />
+        </div>
+
+        <div class="carousel-navigation">
+            <button class="prev">&#10094;</button>
+            <button class="next">&#10095;</button>
+        </div>
+
+        <div class="carousel-bullets">
+            <span class="bullet"></span>
+            <span class="bullet"></span>
+            <span class="bullet"></span>
+        </div>
+
+    </Section>
+
+    <!-- end of carousel -->
+
+
+
+    <div class="heading">
+        <h1>TECHNOLOGIES FOR WELLBEING</h1>
+    </div>
+
+    <section class="program-card">
+
+
+        <div class="cards">
+            <div class="card-div">
+                <img src="./images/Nature.webp" alt="card image">
+                <p class="text">Explore The Nature</p>
+                <button class="action-button">More Info</button>
+            </div>
+        </div>
+
+       
+        <div class="cards">
+            <div class="card-div">
+                <img src="./images/card-meditation.webp" alt="card image">
+                <p class="text">Meditation</p>
+                <button class="action-button">More Info</button>
+            </div>
+        </div>
+
+        <div class="cards">
+            <div class="card-div">
+                <img src="./images/Buddha.webp" alt="card image">
+                <p class="text">Enjoy Bhuddism</p>
+                <button class="action-button">More Info</button>
+            </div>
+        </div>
+
+        <div class="cards">
+            <div class="card-div">
+                <img src="./images/chakras-7207900_1280.webp" alt="card image">
+                <p class="text">Unleash Your Chakras</p>
+                <button class="action-button">More Info</button>
+            </div>
+        </div>
+
+
+
+        <div class="cards">
+            <div class="card-div">
+                <img src="./images/yoga-7023285_1280.webp" alt="card image">
+                <p class="text">Learn Variety of Yogas</p>
+                <button class="action-button">More Info</button>
+            </div>
+        </div>
+
+        <div class="cards">
+            <div class="card-div">
+                <img src="./images/Becmome a Teacher.jpg" alt="card image">
+                <p class="text">Become a Teacher</p>
+                <button class="action-button">More Info</button>
+            </div>
+        </div>
+
+    </section>
+
+
+    <div class="container-02">
+        <section class="festive-image">
+            <div class="festive-text-container">
+                <h2>The Yoga Odyssey: A 3-Day Exploration</h2>
+                <p><i>Explore a variety of styles, from energizing flows to restorative yin, 
+                    while learning proper alignment and personalized techniques.</p>
+                <p>13-15 August 2024</i></p>
+                <p>Hatch House, West Hatch, Tisbury, Wiltshire </p>
+                <button class="button" type="button">Buy Tickets</button>
+            </div>
+        </section>
+
+        <section class="festive-image-02">
+            <div class="festive-text-container">
+                <h2>The Mindful Oasis: A 2-Day Exploration</h2>
+                <p><i>Unwind, recharge, and connect with your inner self at our Summer Yoga Fest's
+                    Meditation Program! This immersive experience, will offer a profound 
+                    exploration of mindfulness and inner peace.</i></p>
+                <p>9th August - 10th August'2024</p>
+                <p>Hatch House, West Hatch, Tisbury, Wiltshire </p>
+                <button class="button" type="button">Buy Tickets</button>
+            </div>
+        </section>
+    </div>
+
+    <div class="container-03">
+        <section>
+            <div id="float-div-1" class="clearfix">
+                <img class="float-image-left" src="./images/volunteer-float-1.webp" alt="Volunteering-image">
+                <div class="float-text-container">
+                    <h3>Contributing</h3>
+                    <p><i>Are you passionate about teaching enthusiastic students from diverse backgrounds, fostering a love
+                         for the practice and its transformative power. Join Us!</i></p>
+                    <p>25-31 July 2024</p>
+                    <p>Hatch House, West Hatch, Tisbury, Wiltshire </p>
+                    <button class="button" type="button">Buy Tickets</button>
+                </div>
+            </div>
+        </section>
+
+
+        <section>
+            <div id="float-div-2" class="clearfix">
+                <img class="float-image-right " src="./images/vol-health-float-2.webp"
+                    alt="Volunteering-image">
+                <div class="float-text-container">
+                    <h3>Health Advocacy</h3>
+                    <p><i>Do you find joy in helping others and want to extend your impact beyond your workplace. Come and Volunteer with Us! </p>
+                    <p>10th August to 17th August 2024</i></p>
+                    <p>Hatch House, West Hatch, Tisbury, Wiltshire </p>
+                    <button class="button" type="button">Buy Tickets</button>
+                </div>
+            </div>
+        </section>
+
+
+
+
+    </div>
+
+    <footer>
+
+        <img src="./images/Footer-top-image.webp" alt="footer-image" height="150px">
+        <div class="footer">
+
+            <div class="left-footer">
+                <div class="logo-footer">
+                    <img src="./images/logo.svg" alt="logo image">
+                </div>
+
+
+                <div class="icons">
+
+                    <a href="#" class="icons-heading"><b>Follow Us on Social Media</b></a>
+                    <ul>
+                        <li><a href="#"><img class="social-icon" src="./images/icon-twitter.svg" alt="twitter"></a></li>
+                        <li><a href="#"><img class="social-icon" src="./images/icon-facebook.svg" alt="facebook"></a>
+                        </li>
+                        <li><a href="#"><img class="social-icon" src="./images/icon-instagram.svg" alt="instagram"></a>
+                        </li>
+                        <li><a href="#"><img class="social-icon" src="./images/icon-linkedin.svg" alt="linkedin"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="center-footer">
+                <ul>
+                    <li><a href="#aboutus">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#events">Events</a></li>
+                    <li><a href="#findyourprogram">Find Your Program</a></li>
+                </ul>
+            </div>
+
+            <div class="right-footer">
+                <p><b><i>"Alone we can do so little; together we can do much." - Helen Keller</i></b></p>
+
+            </div>
+        </div>
+
+        <!-- Legal links in the footer. -->
+       
+       <div class="footer-tags">
+        <p>
+            <!-- ALT 124 >>> | -->
+            <a href="#">legal</a> | <a href="#">cookies</a> | <a href="#">site map</a> | <a href="#"
+                class="button-back-top">back to top &#11014;</a>
+        </p>
+    </div>
+
+        <!-- Copyrights. -->
+        <p class="rights">&copy; 2024 Yoga. All rights reserved.</p>
+   
+    </footer>
+    <script src="./scripts/home-page.js"></script>
+    <script src="https://kit.fontawesome.com/f8e1a90484.js" crossorigin="anonymous"></script>
 </body>
+
 </html>
