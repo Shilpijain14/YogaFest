@@ -53,7 +53,7 @@
  }
 
  .carousel-slide img {
-     height: 650px;
+     height: 40rem;
  }
 
  .carousel-slide img {
@@ -120,7 +120,7 @@
  .logo {
      float: left;
      padding: 10px 30px;
-     height: 80px;
+     height: 8rem;
  }
 
  .navbar ul {
@@ -128,12 +128,12 @@
      list-style: none;
      justify-content: flex-end;
      align-items: center;
-     padding-top: 3.7rem;
+     padding-top: 60px;
  }
 
  .navbar ul li a {
      text-decoration: none;
-     padding: 28px 15px;
+     padding: 28px 16px;
      margin-top: 10px;
      font-weight: 100;
      color: var(--color-text);
@@ -156,7 +156,7 @@
      align-items: center;
      cursor: pointer;
      padding: 10px 20px;
-     margin: 7px;
+     margin: .4rem;
      border: none;
      font-size: 18px;
  }
@@ -232,11 +232,11 @@
  .festive-image {
      background-image: linear-gradient(rgba(0, 0, 0, .1),
              rgba(0, 0, 0, 1)),
-         url("../images/Fest-image-1.webp");
+         url("../images/fest-image-1.webp");
  }
 
  .festive-image,
- .festive-image-02 {
+ .festive-image-two {
      /* height: 50vh; */
      background-position: center;
      background-size: cover;
@@ -267,20 +267,20 @@
      align-items: center;
  }
 
- .festive-image-02 {
+ .festive-image-two {
      background-image: linear-gradient(rgba(0, 0, 0, .1),
              rgba(0, 0, 0, 1)),
-         url("../images/Fest-image-2.webp");
+         url("../images/fest-image-2.webp");
  }
 
- #float-div-1 {
+ #float-div-one {
      box-sizing: border-box;
      overflow: hidden;
      margin-top: 8rem;
      margin-left: 10rem;
  }
 
- #float-div-2 {
+ #float-div-two {
      box-sizing: border-box;
      overflow: hidden;
      margin-top: 2rem;
@@ -322,7 +322,7 @@
  }
 
  /* to bring the text in the alignment of floating-div-1 */
- #float-div-2 .float-text-container {
+ #float-div-two .float-text-container {
      margin-left: 8rem;
  }
 
@@ -337,19 +337,19 @@
  h2,
  h3 {
      font-size: 35px;
-     line-height: 1.1;
+     line-height: 30px;
  }
 
  p {
      font-size: 16px;
  }
 
- .container-02 {
+ .container-festival {
      background-color: var(--navbar-background);
      padding: 1rem 0;
  }
 
- .container-03 {
+ .container-float-div {
      margin-bottom: 5rem;
      padding-inline-end: .1rem;
  }
@@ -459,7 +459,7 @@
      }
 
      .navbar ul li {
-         padding: 20px;
+         padding: 1.25rem;
          padding-top: 0;
          cursor: pointer;
      }
@@ -502,7 +502,7 @@
      .festive-text-container button {
          padding: .5rem;
          width: 30%;
-         font-size: 15px;
+         font-size: 14px;
      }
 
      .float-image-left,
@@ -511,16 +511,16 @@
          clear: none;
          display: block;
          justify-content: center;
-         width: 40rem;
+         width: 640px;
 
      }
 
-     .container-03 {
+     .container-float-div {
          margin: 2rem;
      }
 
-     #float-div-1,
-     #float-div-2 {
+     #float-div-one,
+     #float-div-two {
          display: flex;
          flex-direction: column;
          justify-content: center;
@@ -529,7 +529,7 @@
      }
 
      .float-text-container {
-         width: 40rem;
+         width: 640px;
          margin-top: 0;
      }
 
@@ -579,7 +579,7 @@
      }
 
      .right-footer p {
-         font-size: 15px;
+         font-size: 16px;
          Padding: 0;
      }
  }
@@ -587,12 +587,12 @@
  /* for tablet */
  @media only screen and (min-width: 768px) and (max-width: 1023px) {
 
-     .container-03 {
+     .container-float-div {
          margin: 2rem;
      }
 
-     #float-div-1,
-     #float-div-2 {
+     #float-div-one,
+     #float-div-two {
          display: flex;
          flex-direction: column;
          justify-content: center;
@@ -601,7 +601,7 @@
      }
 
      .float-text-container {
-         width: 40rem;
+         width: 640px;
          margin-top: 0;
      }
 
